@@ -31,6 +31,10 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>3.6.0.1398</version>
+                    <configuration>
+                        <!-- Update SonarQube server URL -->
+                        <sonar.host.url>http://3.101.13.52:9000</sonar.host.url>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.jacoco</groupId>
@@ -50,7 +54,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://localhost:9000
+                    http://3.101.13.52:9000
                 </sonar.host.url>
             </properties>
         </profile>
